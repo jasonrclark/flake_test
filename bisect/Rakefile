@@ -1,0 +1,13 @@
+require 'rake/testtask'
+require 'minitest'
+
+task :default => :test
+
+Rake::TestTask.new do |t|
+  ENV["TESTOPTS"] ||= "-v"
+  t.libs << "lib"
+  t.pattern = "test/*test.rb"
+end
+
+require 'test_bisect'
+TestBisect::BisectTask.new
