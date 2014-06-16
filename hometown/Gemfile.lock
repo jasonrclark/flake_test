@@ -1,0 +1,12 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    hometown (0.0.1)
+    minitest (5.3.4)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  hometown
+  minitest
